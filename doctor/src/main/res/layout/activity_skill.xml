@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include android:id="@+id/title"
+        layout="@layout/title_normal"/>
+
+    <TextView
+        android:id="@+id/skill_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:text="擅长疗法"
+        android:textSize="@dimen/hint_size"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recyclerView_shoufa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:layout_error="@layout/view_error"
+        app:recyclerClipToPadding="true"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/skill_hint"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/body_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerView_shoufa"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:text="主治病症选择"
+        android:textSize="@dimen/hint_size"
+        android:textColor="@color/black"/>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:layout_error="@layout/view_error"
+        app:recyclerClipToPadding="true"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/body_hint"
+        android:layout_above="@id/submit"/>
+
+    <Button
+        android:id="@+id/submit"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="确定"
+        android:background="@drawable/login_btn"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold" />
+
+</RelativeLayout>

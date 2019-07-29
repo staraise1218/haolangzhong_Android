@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>头痛</item>
+        <item>失眠</item>
+        <item>咽痛</item>
+        <item>耳鸣</item>
+    </string-array>
+</resources>

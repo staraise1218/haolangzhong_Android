@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">百科郎中-郎中端</string>
+
+    <!-- 登录!-->
+    <string name="login_phone">请输入手机号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_other">第三方账号登录</string>
+
+    <!-- 忘记密码!-->
+    <string name="forget_title">忘记密码</string>
+    <string name="forget_verif">请输入验证码</string>
+    <string name="forget_get_verif">获取验证码</string>
+    <string name="forget_new_pwd">请输入新密码</string>
+    <string name="forget_sure_pwd">请确认新密码</string>
+    <string name="forget_sure">确定</string>
+
+    <!-- 注册!-->
+    <string name="register_hint">已有账号 去</string>
+    <string name="register_hint_2">登录>></string>
+    <string name="register_default">点击注册代表同意</string>
+    <string name="register_xy_1">百科郎中-技师端使用协议</string>
+    <string name="register_and">和</string>
+    <string name="register_xy_2">隐私协议</string>
+
+    <!-- 首页!-->
+    <string name="home">订单</string>
+    <string name="mine">我的</string>
+
+    <!-- 我的!-->
+    <string name="order_total">订单总数</string>
+    <string name="mine_order_total">咨询调理订单</string>
+    <string name="mine_yuyue">挂我的号</string>
+    <string name="mine_money">我的钱包</string>
+    <string name="mine_ask">我的评价</string>
+    <string name="mine_feedback">用户反馈</string>
+    <string name="mine_about_us">关于我们</string>
+
+    <string name="app_introduce">自我介绍编辑</string>
+</resources>

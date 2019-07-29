@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">百科郎中</string>
+
+    <!-- 登录!-->
+    <string name="login_phone">请输入手机号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="login_forget">忘记密码？</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="login_other">第三方账号登录</string>
+    <string name="bind">确定绑定</string>
+
+    <!-- 忘记密码!-->
+    <string name="forget_title">忘记密码</string>
+    <string name="forget_verif">请输入验证码</string>
+    <string name="forget_get_verif">获取验证码</string>
+    <string name="forget_new_pwd">请输入新密码</string>
+    <string name="forget_sure_pwd">请确认新密码</string>
+    <string name="share_code">请输入分享码（非必填项）</string>
+    <string name="forget_sure">确定</string>
+
+    <!-- 注册!-->
+    <string name="register_hint">已有账号 去</string>
+    <string name="register_hint_2">登录>></string>
+    <string name="register_default">点击注册代表同意</string>
+    <string name="register_xy_1">用户服务协议</string>
+    <string name="register_and">和</string>
+    <string name="register_xy_2">隐私协议</string>
+
+    <!-- 首页!-->
+    <string name="home">百科郎中</string>
+    <string name="home_zxwz">在线问诊</string>
+    <string name="home_zyzj">中医专家</string>
+    <string name="home_kzyf">空中药房</string>
+    <string name="home_zhfu">综合服务</string>
+
+    <string name="home_tjzj">健康商城</string>
+    <string name="home_rmyf">健康商城</string>
+    <string name="home_more">更多 ></string>
+
+    <string name="aks">咨询</string>
+    <string name="mine">我的</string>
+
+    <string name="mine_fellow">我的关注</string>
+    <string name="mine_collect">我的收藏</string>
+    <string name="mine_address">我的地址</string>
+    <string name="mine_drug">我的药方</string>
+    <string name="mine_order">我的订单</string>
+    <string name="mine_money">我的红包</string>
+    <string name="mine_wenzhen">我的问诊</string>
+    <string name="mine_tiaoli">我的调理</string>
+    <string name="mine_guahao">我的挂号</string>
+    <string name="mine_feedback">用户反馈</string>
+    <string name="mine_about_us">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="artical">精选文章</string>
+    <string name="zxwz_hint">重要：根据病情需要，上传患者病历、检测报告、患处、面部及体型等照片</string>
+    <string name="zxwz_content">请用10-500字详细描述您的年龄、性别、症状、疾病和身体状况，否则可能无法获得医生的详细解答。请勿透漏您的真实姓名和联系方式。</string>
+    <string name="zxwz_pic">上传相关图片（检查单、CT、病例、患处药品等），只有您和当前医生可见，百科郎中。</string>
+
+    <string name="add_message">请填写基本资料</string>
+    <string name="your_name">您的名字</string>
+    <string name="your_gender">您的性别</string>
+    <string name="your_age">您的年龄</string>
+    <string name="your_phone">联系方式</string>
+    <string name="your_time">预约时间</string>
+    <string name="your_info">请描述您的症状</string>
+
+    <string name="share">分享</string>
+    //支付
+    <string name="pay_total">支付金额</string>
+    <string name="pay_way">支付方式</string>
+    <string name="pay_way_wx">微信支付</string>
+    <string name="pay_way_wx_hint">推荐安装6.0版本以上用户使用</string>
+    <string name="pay_way_zfb">支付宝支付</string>
+    <string name="pay_way_zfb_hint">若没绑定支付宝,请先绑定</string>
+    <string name="pay_way_yl">银联支付</string>
+    <string name="pay_finish">支付成功</string>
+    <string name="pay_get">收款方</string>
+    <string name="pay_name">百科郎中平台</string>
+
+    //会员
+    <string name="mamber_pay">会员充值</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">发送返回</string>
+</resources>

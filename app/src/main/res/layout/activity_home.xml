@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/home_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/home_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shouye" />
+
+            <TextView
+                android:id="@+id/home_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/home"
+                android:textColor="@color/red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ask_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ask_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wenzhen_2" />
+
+            <TextView
+                android:id="@+id/ask_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/aks"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mine_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mine_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wode_2" />
+
+            <TextView
+                android:id="@+id/mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/mine"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/white"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/position_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/shouye_weizhi" />
+
+        <TextView
+            android:id="@+id/positon_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/position_img"
+            android:textColor="@color/text_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/msg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/shouye_xiaoxi" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bottom"
+        android:scrollbars="none"
+        android:layout_below="@+id/title" >
+
+        <RelativeLayout
+            android:id="@+id/top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="190dp" />
+
+            <LinearLayout
+                android:id="@+id/tab_1"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_below="@id/banner"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/zyzj"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/zyzj"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/kzyf"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@mipmap/kzyf"></RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_2"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_below="@id/tab_1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="8dp">
+
+                <RelativeLayout
+                    android:id="@+id/zxwz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/zxwz"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/zhfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@mipmap/zhfw"></RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/haolangzhong"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/tab_2"
+                android:background="@mipmap/haozhongyi"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/line_wide_4"
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/yellow_low"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/haolangzhong"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"/>
+
+            <LinearLayout
+                android:id="@+id/haolangzhong_help"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@+id/line_wide_4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:id="@+id/zxt"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/zxt"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/jzfw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@mipmap/jzfw"></RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/zj_more_hint"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/haolangzhong_help"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/home_tjzj"
+                    android:textColor="@color/text_color"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/home_more"
+                    android:textColor="@color/text_color"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zj_rl"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/zj_more_hint"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/zj_img"
+                    android:layout_width="77dp"
+                    android:layout_height="101dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/zj_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/zj_img"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/zj_img"
+                    android:text="李时珍"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/zj_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zj_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toRightOf="@id/zj_img"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/zj_star_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/zj_star_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/zj_star_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/zj_star_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/zj_star_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/zj_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zj_stars"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/zj_img"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/zj_mark_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/mark_bg"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="人体寒症"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/zj_mark_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mark_bg"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="人体寒症"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/zj_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/zj_mark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/zj_img"
+                    android:text="副主任医师 副教授"
+                    android:textColor="@color/gray_hint"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fj_more_hint"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/zj_rl"
+                android:layout_marginTop="2dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/home_rmyf"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/home_more"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/home_drug_rl"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/fj_more_hint"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/fj_img"
+                    android:layout_width="77dp"
+                    android:layout_height="101dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/fj_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/fj_img"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fj_img"
+                    android:text="黑枸杞"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/fj_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fj_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/fj_img"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fj_star_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/fj_star_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/fj_star_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/fj_star_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+
+                    <ImageView
+                        android:id="@+id/fj_star_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/yaofang_star" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fj_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fj_stars"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/fj_img"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fj_mark_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/mark_bg"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="养肝明目"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/fj_mark_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/mark_bg"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="2dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:text="延缓衰老"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fj_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fj_mark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/fj_img"
+                    android:text="副主任医师 副教授"
+                    android:textColor="@color/gray_hint"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></WebView>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

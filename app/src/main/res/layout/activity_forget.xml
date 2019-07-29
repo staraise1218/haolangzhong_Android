@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_normal" />
+
+    <RelativeLayout
+        android:id="@+id/forget_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/forget_phone_rl"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="26dp">
+
+            <EditText
+                android:id="@+id/forget_phone_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/login_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="@dimen/hint_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/forget_verif_rl"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/forget_phone_rl"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp">
+
+            <EditText
+                android:id="@+id/forget_verif_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/forget_verif"
+                android:inputType="phone"
+                android:textSize="@dimen/hint_size" />
+
+            <TextView
+                android:id="@+id/get_verif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/forget_get_verif"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                android:padding="5dp"
+                android:textSize="@dimen/hint_size"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="17dp"
+                android:background="@color/red"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/get_verif"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forget_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/forget_verif_rl"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp">
+
+            <EditText
+                android:id="@+id/forget_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/forget_new_pwd"
+                android:inputType="textPassword"
+                android:textSize="@dimen/hint_size" />
+
+            <ImageView
+                android:id="@+id/yanjing_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yanjing"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/forget_sure_rl"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@id/forget_pwd_rl"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp">
+
+            <EditText
+                android:id="@+id/forget_sure_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="@string/forget_sure_pwd"
+                android:inputType="textPassword"
+                android:textSize="@dimen/hint_size" />
+
+            <ImageView
+                android:id="@+id/yanjing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/yanjing"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_color"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forget_btn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/login_btn"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/forget_sure"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="47dp"/>
+
+</RelativeLayout>

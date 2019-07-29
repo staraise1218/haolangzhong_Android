@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    <include android:id="@+id/title"
+        layout="@layout/title_normal"/>
+<RelativeLayout
+    android:id="@+id/total_rl"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@id/title">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/pay_total"
+        android:textColor="@color/red"
+        android:layout_marginLeft="12dp"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/total_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red"
+        android:layout_marginRight="24dp"
+        android:textSize="14sp"/>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_line"
+        android:layout_below="@id/total_rl"/>
+
+    <TextView
+        android:id="@+id/pay_way_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_way"
+        android:layout_below="@id/gray_line"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/wx_pay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/pay_way_hint">
+        <ImageView
+            android:id="@+id/wx_pay_img"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/wx_pay"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wx_pay_img"
+            android:orientation="vertical"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_wx"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_wx_hint"
+                android:textSize="15sp"
+                android:layout_marginTop="9dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/choose_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/unchoose"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/gray_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_below="@id/wx_pay"/>
+
+    <RelativeLayout
+        android:id="@+id/zfb_pay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@id/gray_line_1">
+        <ImageView
+            android:id="@+id/zfb_pay_img"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zfb_pay"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/zfb_pay_img"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_zfb"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_way_zfb_hint"
+                android:textSize="15sp"
+                android:layout_marginTop="9dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/choose_img_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/unchoose"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_btn"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="支付"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_below="@+id/zfb_pay"
+        android:layout_marginTop="79dp"/>
+
+</RelativeLayout>

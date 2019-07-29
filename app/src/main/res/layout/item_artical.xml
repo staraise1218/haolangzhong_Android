@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zj_rl"
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    android:layout_below="@id/zj_more_hint"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/artical_img"
+        android:layout_width="110dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/artical_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@id/artical_img"
+        android:text="李时珍"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/hint_size" />
+
+    <TextView
+        android:id="@+id/artical_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/hint_size"
+        android:text="2019-02-11" />
+
+</RelativeLayout>
+

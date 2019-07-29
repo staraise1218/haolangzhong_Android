@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_ll_ClassfiySeletView">
+
+    <include android:id="@+id/title"
+        layout="@layout/title_normal"/>
+
+    <RelativeLayout
+        android:id="@+id/fellow_tab"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/title"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/hospital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="百科郎中合作机构"
+            android:textSize="18sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@id/right_ll"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/hospital_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hospital_name"
+            android:text="百科郎中是一家移动互联网中医智能化平台，为广大用户提供在线健康咨询、寻医问药、中医调理、养生保健等健康服务，同时为广大用户提供教育培训、急症救治、爱心众筹等社会服务。"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:layout_toLeftOf="@id/right_ll"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            android:id="@+id/right_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/hospital_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/hospital" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/hospital_img"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:text="立即查看"
+                    android:gravity="center_vertical"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/check_yy"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fellow_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fellow_tab"
+        android:background="#fff5f5f5"/>
+
+    <com.jude.easyrecyclerview.EasyRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_empty="@layout/view_empty"
+        app:layout_progress="@layout/view_progress"
+        app:layout_error="@layout/view_error"
+        app:recyclerClipToPadding="true"
+        app:scrollbarStyle="insideOverlay"
+        app:scrollbars="none"
+        android:layout_below="@id/fellow_line" />
+
+</RelativeLayout>

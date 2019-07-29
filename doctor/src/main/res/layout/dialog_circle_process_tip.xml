@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:background="@mipmap/dialog_circle_backgroud"
+   	android:gravity="center"
+    android:orientation="vertical" >
+    
+    <ProgressBar
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/dialog_style_xml_icon"
+        />
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:text="完成"        />
+    
+
+</LinearLayout>

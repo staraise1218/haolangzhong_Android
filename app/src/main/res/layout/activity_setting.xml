@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/title"
+        layout="@layout/title_normal"/>
+    <RelativeLayout
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="版本检测"
+            android:textSize="@dimen/hint_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"/>
+        <ImageView
+            android:id="@+id/version_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/go"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"/>
+        <TextView
+            android:id="@+id/version_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/hint_size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/version_iv"
+            android:layout_marginRight="11dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cache"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@id/version"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="清除缓存"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:textSize="@dimen/hint_size"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/go"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="11dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_btn"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/cache"
+        android:layout_marginTop="79dp"/>
+
+</RelativeLayout>
